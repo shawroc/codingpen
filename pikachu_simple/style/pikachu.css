@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FFE433;
+}
+
+.pikachu-board {
+    width: 100%;
+    height: 165px;
+    position: relative;
+}
+
+.pikachu-nose {
+    width: 0px;
+    height: 0px;
+    border: 11px solid;
+    border-width: 10px 12px;
+    border-color: black transparent transparent; 
+    position: absolute;
+    left: 50%;
+    top: 28px;
+    transform: translateX(-50%);
+    border-radius: 50%;
+}
+
+.pikachu-eye {
+    width: 49px;
+    height: 49px;
+    background-color: #2E2E2E;
+    position: absolute;
+    border-radius: 50%;
+    border: 2px solid #000;
+}
+
+.pikachu-eye::before {
+    content: '';
+    display: block;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: white;
+    left: 6px;
+    top: 1px;
+    border: 1px solid black;
+}
+
+.pikachu-eye.left {
+    right: 50%;
+    transform: translateX(-100%);
+}
+
+.pikachu-eye.right {
+    left: 50%;
+    transform: translateX(100%);
+}
+
+.pikachu-face-flush {
+    width: 80px;
+    height: 80px;
+    background-color: #FC0D1C;
+    border-radius: 50%;
+    border: 2px solid black;
+    position: absolute;
+}
+
+.pikachu-face-flush.left {
+    right: 50%;
+    top: 50%;
+    transform: translateX(-100%);
+}
+
+.pikachu-face-flush.right {
+    left: 50%;
+    top: 50%;
+    transform: translateX(100%);
+}
+
+.pikachu-upper-lip {
+    height: 25px;
+    width: 80px;
+    border: 3px solid black;
+    position: absolute;
+    top: 38%;
+    background-color: #FFE433;
+}
+
+.pikachu-upper-lip.left {
+    right: 50%;
+    border-bottom-left-radius: 40px 25px;
+    border-top: none;
+    border-right: none;
+    transform: rotate(-21deg);
+}
+
+.pikachu-upper-lip.right {
+    left: 50%;
+    border-bottom-right-radius: 40px 25px;
+    border-top: none;
+    border-left: none;
+    transform: rotate(21deg);
+}
+
+.pikachu-mouse {
+    width: 120px;
+    height: 200px;
+    background-color: #d34251;
+    border-bottom-left-radius: 100px 300px;
+    border-bottom-right-radius: 100px 300px;
+    border: 2px solid black;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    overflow: hidden;
+}
+/* .pikachu-board > *:not(:last-child)  */
+.pikachu-mouse-cover {
+    height: 120px;
+    width: 200px;
+    position: absolute;
+    left: 50%;
+    bottom: -15%;
+    transform: translateX(-50%);
+    overflow: hidden;
+}
+
+.pikachu-mouse::after {
+    content:'';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    height: 150px;
+    width: 150px;
+    background-color: pink;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    top: 55%;
+}
+

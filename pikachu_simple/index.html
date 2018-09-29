@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Draw a Pikachu for you~</title>
+    <link rel="stylesheet" href="./style/main.css">
+    <style id="styleTag"></style>
+    <script src="./vendor/jquery.min.js"></script>
+    <script src="./js/main.js" defer></script>
+</head>
+<body>
+    <div class="code-wrapper">
+        <pre id="code"></pre>
+    </div>
+    <div class="pikachu-preview-wrapper">
+        <div class="pikachu-preview">
+            <div class="pikachu-board">
+                <div class="pikachu-mouse-cover">
+                    <div class="pikachu-mouse"></div>
+                </div>
+                <div class="pikachu-nose"></div>
+                <div class="pikachu-eye left"></div>
+                <div class="pikachu-eye right"></div>
+                <div class="pikachu-face-flush left"></div>
+                <div class="pikachu-face-flush right"></div>
+                <div class="pikachu-upper-lip left"></div>
+                <div class="pikachu-upper-lip right"></div>
+            </div>
+        </div>
+    </div>
+    <div class="actions">
+        <button class='active' data-speed="slow">Low Speed</button>
+        <button data-speed="normal">Medium Speed</button>
+        <button data-speed="fast">Fast Speed</button>
+    </div>
+</body>
+</html>
