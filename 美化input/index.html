@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>美化 input</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    * {
+      box-sizing: border-box;
+    }
+    *::before, *::after {
+      box-sizing: border-box;
+    }
+    ul, ol {
+      list-style: none;
+    }
+    body {
+      min-height: 100vh;
+      border: 1px solid #f00;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .wrapper {
+      border: 1px solid #0f0;
+    }
+    .suggestion {
+      display: none;
+    }
+    .inputWrapper {
+      position: relative;
+    }
+    .floatButton {
+      position: absolute;
+      border: 1px solid red;
+      right: 0;
+      top: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <span class="inputWrapper">
+      <input type="text">
+      <span class="floatButton">
+        <button>x</button>
+        <button>y</button>
+      </span>
+      <span class="split-line"></span>
+    </span>
+    <button>百度一下</button>
+    <ul class="suggestion">
+      <li>选项1</li>
+      <li>选项2</li>
+      <li>选项3</li>
+      <li>选项4</li>
+    </ul>
+  </div>
+</body>
+</html>
